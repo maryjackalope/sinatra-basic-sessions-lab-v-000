@@ -1,9 +1,8 @@
 require_relative 'config/environment'
-
- class App < Sinatra::Base	class App < Sinatra::Base
+ class App < Sinatra::Base	
    configure do
     enable :sessions
-    set :session_secret, "shakshuka"
+    set :session_secret, "secret"
   end
    get '/' do 
     @session = session
@@ -14,4 +13,4 @@ require_relative 'config/environment'
   @session = session
   erb :checkout
   end
-end 
+end 	
