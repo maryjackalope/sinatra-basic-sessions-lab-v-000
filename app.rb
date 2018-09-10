@@ -14,5 +14,4 @@ require_relative 'config/environment'
   @session = session
   erb :checkout
   end
-end 	end 
-end
+end 
