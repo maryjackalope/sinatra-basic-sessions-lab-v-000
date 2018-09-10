@@ -1,11 +1,9 @@
 require_relative 'config/environment'
 
-class App < Sinatra::Base
-  require_relative 'config/environment'
  class App < Sinatra::Base	class App < Sinatra::Base
    configure do
     enable :sessions
-    set :session_secret, "secret"
+    set :session_secret, "shakshuka"
   end
    get '/' do 
     @session = session
